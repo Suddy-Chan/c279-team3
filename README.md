@@ -1,3 +1,4 @@
 # c279-team3
 Private repo for team3 of wiley c279
-This line added by songjiaze. 
+This line added by songjiaze.
+Hi friends, from syahirah!

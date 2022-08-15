@@ -1,0 +1,84 @@
+git terminal (local repo):
+
+Git is in our console, our own device.
+
+Eg of commands:
+
+- git add, git commit, git push, git status
+- git add . : to add all files to staging area (midstage between local to remote)
+- untracked area (red files, unstaged area)
+- git pull is pulling from remote to local. 
+- git fetch (vs git pull) is if remote has updated changes and your local is not updated and is of older version, it won’t change your local repo
+- git rm file: remove file
+- git restore –stage file: to restore the file
+- git clone: creates a local copy of a project that already exists remotely. The clone includes all the project's files, history, and branches.
+- git status shows the status of changes as untracked, modified, or staged.
+- git pull: updates the local line of development with updates from its remote counterpart. Developers use this command if a teammate has made commits to a branch on a remote, and they would like to reflect those changes in their local environment.
+- git push: updates the remote repository with any commits made locally to a branch.
+
+GitHub remote repo:
+
+GitHub hosts Git repositories and provides developers with tools to ship better code through command line features, issues, pull requests and code review. It enables collaboration between developers, where they can update or change their codes at the same time. They can see the details of other commits, who commits and when.
+
+GitHub builds collaboration directly into the development process. Work is organized into repositories where developers can outline requirements or direction and set expectations for team members. Then, using the GitHub flow, developers simply create a branch to work on updates, commit changes to save them, open a pull request to propose and discuss changes, and merge pull requests once everyone is on the same page.
+
+Interface on GitHub website:
+
+Branch:
+
+Git saves each version of your project as a snapshot of the code exactly as it was at the moment you committed it. It creates a timeline of versions of a project as it progresses, so that you can return to an earlier version when facing any issues. GitHub manages this timeline — especially when more than one person is working in the project and making changes — by using branches. A branch is a unique set of code changes with a unique name. Each repository can have one or more branches. The main branch — the one where all changes eventually get merged back into. This is the official working version of your project. If you make changes to the main (aka master) branch of a group project while other people are also working on it, your changes will ripple out to affect everyone else and there will be serious merge conflicts.
+
+Why is main branch so important to not mess with? It is deployable. It is your production code, ready to roll out into the world. It is meant to be stable, and you should never push anything to master that is not tested, or that breaks the build. The entire reason GitHub works is that it is always safe to work from the master. Instead, everyone uses branches created from master to experiment, make edits and additions and changes, before eventually rolling that branch back into the master once they have been approved and are known to work. Master then is updated to contain all the new stuff. To begin working on anything new in a project, or to change existing things, you create a branch off the stable master branch.
+
+Issues: Used to track to-dos, bugs, feature requests, and more.
+
+Pull requests: help you collaborate on code with other people. For discussion.
+
+Actions: Build, test, and deploy your code. Make code reviews, branch management, and issue triaging work the way you want. (like deploy to AWS cloud)
+
+Projects: Built like a spreadsheet, project tables give you a live canvas to filter, sort, and group issues and pull requests. Tailor them to your needs with custom fields and saved views.
+
+Wiki: Provide a place in your repo to lay out the roadmap of your project, show the current status, and document software better, together.
+
+Security: 
+Security policy • Define how users should report security vulnerabilities for this repository
+Security advisories • View or disclose security advisories for this repository
+Dependabot alerts • Get notified when one of your dependencies has a vulnerability
+Code scanning alerts • Automatically detect common vulnerability and coding errors
+
+Insights: shows overview of active/merged/open pull requests, active/closed/new issues, contributions, commits
+
+TEAM
+
+My team remote repo: /c279-team3
+link: https://github.com/Suddy-Chan/c279-team3 
+
+Questions to the team: (ON 15/08/2022, Monday)
+- manage user permissions like pull push (Sunny creates a private repo)
+- create individual branches to the repo
+- take a main branch and commit at the same time
+
+Lessons learned:
+
+Creating private repo, go to Settings, Under Access at LHS, click on Collaborators and add team members in so that the rest are given permissions to access the repo.
+
+Basic git commands: git clone, git add, git commit, git push.
+
+At main branch
+- git push cannot be done since remote contains work that are not found in local repo.
+- need to git pull first to keep local repo up to date with remote.
+
+git status: good to see which branch you are at (ie main branch/ur own branch)
+
+ls to see files that exist.
+
+git checkout -b Syahirah (to navigate to new branch)
+git checkout Syahirah (to navigate to existing branch) or git checkout main
+
+git push to ur own branch will result to changes in ur branch only (other people can compare and do pull requests for discussions): git push --set-upstream origin Syahirah
+
+To remove file:
+-	git rm filename
+-	git commit -m “deleted file from repo”
+-	git push
+

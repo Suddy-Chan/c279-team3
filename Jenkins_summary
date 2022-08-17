@@ -1,0 +1,48 @@
+Installation on AWS EC2 Instance:
+https://hashnode.com/post/installing-jenkins-on-linux-server-using-aws-ec2-ubuntu-1804-second-month-into-the-shecodeafrica-cloud-school-ckuf2qgep01fkvps1bd07fnu5
+
+install Java first then jenkins,
+1. Error: /etc/environment: Permission denied
+   solution: use sudo
+   
+2. The sentence with key could be replaced by: 
+curl -s https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/Jenkins.gpg --import
+sudo chmod 644 /etc/apt/trusted.gpg.d/Jenkins.gpg
+
+3. Change the inbound rule for the instance to "all traffic" "0.0.0.0/0"
+
+
+What is Jenkins?
+Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
+Jenkins can be installed through native system packages, Docker, or even run standalone by any machine with a Java Runtime Environment (JRE) installed.
+
+
+To create a basic Pipeline through the Jenkins classic UI:
+1. From the Jenkins home page (i.e. the Dashboard of the Jenkins classic UI), click New Item at the top left.
+2. In the Enter an item name field, specify the name for your new Pipeline project.
+3. 
+4. 
+
+Managing Jenkins:
+
+To configure a plugin with JCasC:
+1.  Use the UI of the current system to install and configure the plugin
+2.  Click Apply >> Save to save the configuration
+3.  Use Manage Jenkins >> Configuration as Code >> View Configuration to view the JCasC file with the plugin configured
+4.  Click on Download Configuration to save the modified configuration file locally
+5.  Edit the JCasC YAML file to modify the configuration, if necessary
+6.  Save the file
+7.  Click Reload existing configuration to load the local changes onto the Jenkins server
+8.  Verify the changes on the UI
+9.  When you have thoroughly tested the plugin configuration, push the modified YAML file to your SCM
+
+
+
+CI/CD
+A continuous integration and continuous deployment (CI/CD) pipeline is a series of steps that must be performed in order to deliver a new version of software. 
+CI/CD pipelines are a practice focused on improving software delivery throughout the software development life cycle via automation.
+
+A pipeline is a process that drives software development through a path of building, testing, and deploying code, also known as CI/CD.
+By automating the process, the objective is to minimize human error and maintain a consistent process for how software is released. 
+Tools that are included in the pipeline could include compiling code, unit tests, code analysis, security, and binaries creation.
+CI/CD is the backbone of a DevOps methodology, bringing developers and IT operations teams together to deploy software.

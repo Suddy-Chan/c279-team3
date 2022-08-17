@@ -1,0 +1,98 @@
+## SUMMARY OF JENKINS ##
+
+# Before Jenkins:
+
+There were irregular commits, for instance developers from different 
+countries working at different times and have different amount of codes
+going into the code repository. Issues that come about in integration, 
+lots of delay in testing being added into the project, bugs that 
+accumulate, end up the project is delayed as a whole. Developers had to 
+wait until the entire software code was built and tested to check for 
+errors. This will increase the amount of problems in the project. Process 
+of delivering the software was slow, we cannot iterate on the software, 
+end up blaming each other for any faults.
+
+# What is Jenkins?
+
+Jenkins is a Continuous Integration tool that allows continuous development, 
+test and deployment of newly created codes. Layman’s terms: 2 developers 
+sitting next to each other and they can continuously develop their code 
+and test their code and move on to new sections of code. Jenkins allows us 
+to submit our codes consistently into a source code environment.
+
+Nightly build: Developers commit changes to the source code, then at night, 
+all codes will be pulled and they will be run and operated and tested to see
+if there are any changes and a new build would be created.
+
+VS
+
+Continuous integration (CI): Code is pulled whenever there is a commit made to 
+the source code, all changes are built continuously. Means you’re always 
+running cycling to test against your code.
+
+# What is CI?
+
+As a developer, you’re able to pull from a repo the code that you’re working 
+on and then you’ll be able to submit the code at any time into a CI server 
+and the goal of CI server is that it actually goes ahead and validates and
+passes any tests that a tester may have created. If a test fails, then that 
+code gets sent back to the developer so that he can then make the changes. 
+He will not break the builds that are being created, which is important.
+Also, he does not to have to run all the tests locally on their computer 
+(esp if there are a number of tests will take up a lot of time.) This 
+improves his productivity. Another benefit is that if there are any code 
+errors beyond just the standard CI test (eg the way code is written isn’t 
+consistent) these errors can then be passed on easily from tester back to 
+the developer too. The goal from doing all this testing is that you're able 
+to release and deploy and your customer is able to get new code faster and 
+when they get that code, it simply just works.
+
+# CI tools:
+
+Most are open source tools to accelerate ur environment quickly. Jenkins is
+one of them. Jenkins is an open source automation server written in Java. It
+is used to automate software development process via CI and facilitates 
+continuous delivery. It is a tool that really becomes the center for your 
+CI environment.
+
+# Features of Jenkins:
+
+5 key areas: Easy installation, easy configuration, plugins, extensibility,
+and distribution.
+
+1. Easy installation: Jenkins is a self-contained Java-based program, ready 
+to run on most popular operating systems including windows, mac os, unix, 
+linux.
+
+2. Easy configuration: Can easily be set up and configured via web interface 
+which includes error checls and built-in help.
+
+3. Plugins: It has hundreds of plugins in the Update Center and integrates 
+with every tool in the CI and CD logichain. these plugins can be added in to 
+extend the base functionality of the product. Good to see which other plugins
+would be good for your devops environment.
+
+4. Extensible: Jenkins can be extended via its plugin architecture and provides
+nearly infinite possibilities for what it can do. You can configure Jenkins 
+to fit in your environment. The extensibility can also be continued with 
+newer releases of Jenkins so you're always having the latest version of 
+Jenkins and your extensions mature with those core foundation.
+
+5. Distributed: It can easily distribute work across multiple machines, 
+helping in faster builds, tests and deployments across multiple platforms.
+
+# Jenkins pipeline: 
+
+From development TO Code commit > Build > Test > Release > Deploy/Deliver 
+TO Production
+
+# Jenkins architecture: 
+
+Jenkins server checks the repo at regular intervals and pulls any new 
+available code. It will run tests. Build servers like Maven builds the code
+into an executable file. Java file is being converted into JAR file. 
+In case the build fails, a feedback is sent to the developers. Jenkins then 
+deploys the build application on to test servers like Selenium for testing. 
+If the test fails, feedback is immediately passed on to the developers. 
+If there are no errors, the tested application is then deployed on to the 
+production server as quickly as possible.

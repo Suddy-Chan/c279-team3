@@ -1,0 +1,37 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1808
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job1808/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/syahirahhhh/testing123 # timeout=10
+Fetching upstream changes from https://github.com/syahirahhhh/testing123
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/syahirahhhh/testing123 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 9c17df7c053e879a94f291a7a46cb3be99131d8c (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c17df7c053e879a94f291a7a46cb3be99131d8c # timeout=10
+Commit message: "Create python_1.py"
+ > git rev-list --no-walk 9c17df7c053e879a94f291a7a46cb3be99131d8c # timeout=10
+[job1808] $ /bin/sh -xe /tmp/jenkins1796552916731368530.sh
++ ls -l
+total 60
+-rw-r--r-- 1 jenkins jenkins 2893 Aug 18 13:25 module10
+-rw-r--r-- 1 jenkins jenkins 1762 Aug 18 13:25 module1112
+-rw-r--r-- 1 jenkins jenkins 3090 Aug 18 13:25 module13
+-rw-r--r-- 1 jenkins jenkins  840 Aug 18 13:25 module2
+-rw-r--r-- 1 jenkins jenkins 3560 Aug 18 13:25 module3
+-rw-r--r-- 1 jenkins jenkins 5156 Aug 18 13:25 module4
+-rw-r--r-- 1 jenkins jenkins 5097 Aug 18 13:25 module5
+-rw-r--r-- 1 jenkins jenkins 3122 Aug 18 13:25 module6
+-rw-r--r-- 1 jenkins jenkins 2710 Aug 18 13:25 module7
+-rw-r--r-- 1 jenkins jenkins 3653 Aug 18 13:25 module8
+-rw-r--r-- 1 jenkins jenkins 1574 Aug 18 13:25 module9
+-rw-r--r-- 1 jenkins jenkins   21 Aug 18 13:25 python_1.py
+drwxr-xr-x 2 jenkins jenkins 4096 Aug 18 13:25 section1
++ python3 python_1.py
+hello world
+Finished: SUCCESS

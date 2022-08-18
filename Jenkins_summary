@@ -16,12 +16,22 @@ What is Jenkins?
 Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 Jenkins can be installed through native system packages, Docker, or even run standalone by any machine with a Java Runtime Environment (JRE) installed.
 
+Creating Docker agent:
+1.  run the command to start the first agent:
+docker run -d --rm --name=agent1 --network jenkins -p 22:22 `
+  -e "JENKINS_AGENT_SSH_PUBKEY=[your-public-key]" `
+  jenkins/ssh-agent:jdk11
+2. 
+  
+
 
 To create a basic Pipeline through the Jenkins classic UI:
 1. From the Jenkins home page (i.e. the Dashboard of the Jenkins classic UI), click New Item at the top left.
-2. In the Enter an item name field, specify the name for your new Pipeline project.
+2. In the Enter an item name field, specify the name for the new Pipeline project.
 3. 
 4. 
+
+
 
 Managing Jenkins:
 

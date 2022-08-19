@@ -32,7 +32,6 @@ To create a basic Pipeline through the Jenkins classic UI:
 4. 
 
 
-
 Managing Jenkins:
 
 To configure a plugin with JCasC:
@@ -56,3 +55,8 @@ A pipeline is a process that drives software development through a path of build
 By automating the process, the objective is to minimize human error and maintain a consistent process for how software is released. 
 Tools that are included in the pipeline could include compiling code, unit tests, code analysis, security, and binaries creation.
 CI/CD is the backbone of a DevOps methodology, bringing developers and IT operations teams together to deploy software.
+
+
+CICD Application build and deployment Project: 1 Day
+
+Provisioning the CICD environment and creating a simple pipeline to build, test and deploy the simple sample python application

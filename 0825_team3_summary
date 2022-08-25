@@ -2,7 +2,6 @@ Exercise: Distributed Tracing
 
 Your Task: Based on these limiting facts and with no access to the system, give your ideas of where you think the issue is and what it might be. Organise your ideas in the priority of which you think most likely.
 
-
 1. One main issue could be the update to the Lambda functions in recent releases last night. As the problem only happens today since 10:00 am after the update changes.
 2. Another issue could be the symbol data from NoSQL database because it only has stocks beginning with A - F, N - R from 9.30am and stocks starting with other letters are missed from 9:30. 
 
@@ -11,8 +10,85 @@ Your Task: Based on these limiting facts and with no access to the system, give 
 Summary: Observability
 
 APM: Application performance monitoring 
-1. logs: record of past events 
-2. metrics: current data  
-3. traces:capture activity for a business transaction;show interactivity in complex sysytems
+1. Logs: for record of past events; 
+automatically created, 
+hold information for events and user behaviour and used for root cause analysis
+
+2. Metrics: for current data; 
+quantified measurement: status of a specific process, have a baseline; 
+can get trends in metric changes: indication of underlying issue
+
+3. Traces: capture activity for a business transaction and show interactivity in complex sysytems;
+Complete record of business request: illustrates a complete transaction, capture all the components and services involved
+Contains hundreds of data points that can: indicate errors, diagnose security threats, detect and isolate component or network issues
+
+Benefits of Obserability 
+overview of complex system 
+faster feature release 
+observe impact of updates - confirmation improvements, identify issues 
+
+Purpose of appication 
+
+Five most important elements:
+1. Runtime application architecture discovery 
+
+
+2. End-user experience monitoring 
+  1. synthetic monitoring
+  2. agentless monitoring 
+
+3. User-defined transaction profiling
+specific user interactions 
+
+4. Component deep-dive monitoring 
+
+5. Analytics
+
+
+Critical APM metrics:
+1. web performance monitoring
+2. system metrics impacting app performance 
+3. application availability and uptime 
+4. request rates 
+5. customer satisfaction
+6. error rates
+7. number of instances
+
+Observing Toil 
+Toil backlog - should be reducing
+             - should not be seeing the same toil recurring in the backlog
+             - amount of toil being reported by specific people reducing
+             - error budget not decreasing as fast = more reliable system 
+Reduced fatique in the team 
+Shorter MTTRs (Mean Time to Repairs)
+Toil metrics come from - Jira, ServiceNow
+                       - Other systems gather information about time
+
+SLIs vs SLOs vs SLAs
+Service level agreements 
+Service level objectives 
+Service level indicators 
+
+Service level indicators indicate service level objects which meet service level agreements
+                       
+                       
+
+Summary: Service Level Indicators 
+
+
+
+
+Summary: Capacity and Performance
+
+
+
+Summary: Service Level Objectives 
+
+
+
+Summary: Alerts
+
+
+
 
 

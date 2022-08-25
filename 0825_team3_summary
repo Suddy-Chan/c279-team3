@@ -7,7 +7,7 @@ Your Task: Based on these limiting facts and with no access to the system, give 
 
 
 
-Summary: Observability
+# Summary: Observability
 
 APM: Application performance monitoring 
 1. Logs: for record of past events; 
@@ -73,20 +73,86 @@ Service level indicators indicate service level objects which meet service level
                        
                        
 
-Summary: Service Level Indicators 
+# Summary: Service Level Indicators 
 
 
 
 
-Summary: Capacity and Performance
+# Summary: Capacity and Performance
 
+Capacity is the system’s ability to respond to loading within acceptable levels of performance and reliability. It can be affected by 
+spikes, time zone variation, hardware failure, events outside the system or dependency failures. Insufficient capacity can lead to 
+user request getting rejected, system performance suffering or system failure. For capacity planning, a team needs to consider if a 
+failure in a service can be handled. They also have to note down how capacity can change when the following events happen: addition 
+of new feature to the app, updates to infrastructure, increased costs from unused systems, systems not being available on time etc. 
+Meanwhile, for capacity testing, a team needs to do testing before deployment, monitoring after deployment and analyse the trend of 
+metrics (memory usage, disk usage, throughput). Question is: Does deployment cause unexpected increase in resources?
 
+The team should identify cost-effective baseline. For example, high-demand scenarios like elections, gas pipeline ransomware, 
+Black Friday. They should also look into architecture issues like multiple time and availability zones. Question: Does increased 
+capacity improve toil?
 
-Summary: Service Level Objectives 
+Capacity testing is to determine how much resource your application can handle before performance or stability becomes unacceptable. 
+It consists of 3 factors: Load testing (is expected capacity a reality), Planned failure of services (how well the system responds), 
+Continuous testing (systems and capacity may change, monitor impact on SLOs). Performance testing is making sure software performance 
+are at acceptable levels (SLOs and user feedback). 3 areas of concern are Speed (quick respond), Stability (continued operation), 
+scalability (max users and autoscaling). A team has to identify bottlenecks and the impact of a new feature to app/infrastructure. 
+Does this performance improvement help with toil? It includes System tests (if performance is acceptable, potential problems from 
+trends), Ongoing, Test before release (continue monitoring performance). 3 types of performance tests are Normal Load Test (what 
+SLIs look like under normal loading), Stress Test (under unexpected high loading), Volume Test (how much traffic can an app handle 
+before it falls over).
 
+Tools used where user experience can be measured are for Internal Application (Prometheus Client Libraries, JMX Metrics) and 
+Performance Testing (LoadRunner, LoadNinja, Jmeter). Continuous monitoring tools include Prometheus (Grafana), AppDynamics, 
+Solarwinds, Nagios XI, New Relic etc.
 
+In conclusion, capacity planning is critical to meet user expectations and many tools are available (what is important here is 
+where to measure given these tools).
 
-Summary: Alerts
+# Summary: Service Level Objectives (SLO)
+
+Definition of SLO:
+-	Internal objectives defined using KPIs that are significant for a critical system’s operation
+-	Shared with stakeholders to show commitment, quality, and availability of service
+-	Used by SRE and Developers to set goals for key operational parameters to build and maintain the system
+-	Help define SLAs for the client and end users
+-	DEFINES error budget
+
+SLO is important because of the following reasons. Firstly, it provides clear and realistic goals, instances where systems can fail and 
+have errors. Secondly, it sets end-user expectations. Thirdly, it ensures quality of product and service. Fourthly, it records the number 
+and frequency of errors which are not just operational issues, but also deployment failures.
+
+Error budget is a metric that determines how unreliable the service can get. It is set at an acceptable working frequency, like monthly 
+or quarterly. It removes politics between teams, deciding how much risk is allowed. To calculate this, 1 - SLO = Error Budget. 
+
+In the case of Google, the product management defines an SLO as an expectation of how much uptime for the service per period. Actual 
+uptime is measured by a neutral third party which is the monitoring system (SLIs). Difference between SLO and SLI is the budget ie how 
+much "unreliability" is remaining for the period. As long as there is error budget remaining, new releases/changes can be made. A service’s 
+SLO is to successfully serve 99.999% of all queries per quarter. The service’s error budget is a failure rate of 0.001% for a given quarter. 
+If a problem causes us to fail 0.0002% of the expected queries per quarter, the problem spends 20% of the service’s quarterly error budget.
+
+Calculating SLO: Availability % = Active time / Expected operating time x 100%. Reliability = Total uptime / No of breakdowns
+For instance, a server crashes for 6 minutes every hour, meaning 90% availability and less than 1 hour of reliability. Calculating availability 
+is good for Infrastructure, Platforms and Application components.
+
+A team should measure latency SLOs from the user to the backend and return. From the point it enters our system and returns to the entry point, 
+where we can manage and control. We should take note entry times and return times to users. It is an aggregate across a number of user requests. 
+Systems may respond differently at different times but always over a time period, not immediately.
+
+Too many metrics and calculation make it complex. So, it is important to identify the right metrics to set SLOs. Don't alert unless it affects 
+SLO. Metrics that really matter are Latency, Traffic, Errors, Saturation, Changes in components like version numbers, options, configuration. 
+We can ignore metrics that are not affecting users like a disk failure, a long running database query, or the user’s Internet connection. Metrics 
+where end-user is being affected are for example, slow disk or network access that pushes latency above expected values, Request/Response times, 
+point of entry to point of return, Waiting time for service availability. This is an iterative process with constant review and monitoring of 
+metrics as system evolves.
+
+Tools for SLO are Prometheus & Grafana, New Relic, Splunk, ELK stack, Datadog, AppDynamics and Smartbear. 
+SLO may exceed (many SLOs from client experience or toil being measured via Jira/ServiceNow tickets). Ideally, we should act before SLO reaches 
+0%. Stop any changes in this area for the failing SLO and only well-proven or low impact changes should be made. Focus on reliability and 
+resilience. Reflect on what causes SLOs to reduce. Areas where SLO has not reached critical can still make changes. If reach below 0%, ensure 
+that we fix the current issue. No further changes should be made until the SLO time period resets.
+
+# Summary: Alerts
 
 
 

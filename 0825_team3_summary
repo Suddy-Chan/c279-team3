@@ -80,6 +80,15 @@ Common SLI Attributes: Aggregates or percentiles relevant and meaningful(SLO tar
 Measures related to user experience, complex system performance, need strong correlation between SLI and user happiness
 Selecting SLI: identify system boundry: user-facing expectations, based on baseline and expectations(time-based data); Fine tune SLI as business/user changes
 Transaction Types and Typical SLI Areas: Request/Response (availability, latency), data processing (throughput, validity), storage (latency, throughput)
+SLI for people: It not restricted to technology monitoring can be used to justify SRE efforts and watch for negative trends
+Positive metrics
+• Mean Time to Restore decreasing
+• Mean Time to Detect decreasing
+• Number of backlog issues decreasing
+• Velocity of updates increasing
+Negative metrics
+• Burn Out flagged by increasing MTTR
+• Runaway toil flagged by increasing issue backlog
 Service Level Indicators flag
 • Business performance issues
 • Potential overloading and burnout

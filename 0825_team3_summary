@@ -32,7 +32,6 @@ Purpose of appication
 Five most important elements:
 1. Runtime application architecture discovery 
 
-
 2. End-user experience monitoring 
   1. synthetic monitoring
   2. agentless monitoring 
@@ -74,8 +73,17 @@ Service level indicators indicate service level objects which meet service level
                        
 
 # Summary: Service Level Indicators 
-
-
+Key to evaluting the performance of the business
+Quantitative measurement of service 
+SLI focus: application avaliability and uptime, request rates/throughput, error rates, satisfaction(latency, availability, response time, durability)
+Common SLI Attributes: Aggregates or percentiles relevant and meaningful(SLO target,ranges match expectations), indicate progress in continuous improvement
+Measures related to user experience, complex system performance, need strong correlation between SLI and user happiness
+Selecting SLI: identify system boundry: user-facing expectations, based on baseline and expectations(time-based data); Fine tune SLI as business/user changes
+Transaction Types and Typical SLI Areas: Request/Response (availability, latency), data processing (throughput, validity), storage (latency, throughput)
+Service Level Indicators flag
+• Business performance issues
+• Potential overloading and burnout
+More than simple metric
 
 
 # Summary: Capacity and Performance

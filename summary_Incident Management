@@ -100,6 +100,33 @@ Focus on capturing all information for future use
 Transfer of Command Discussion
 Always include a thorough transfer of command briefing
 Notify the rest of the incident response team
-What would you include in a transfer of command briefing?
-
+What would you include in a transfer of command briefing
+Incident Management Checklist
+Acknowledge the incident
+ Initialize internal and external communications channels
+Research the issue
+ Triage for scope and severity
+ Make initial diagnosis
+ Localized or other systems impacted  Dependencies
+Fixable/Escalate
+ Check for existing playbook to handle 
+ Is a fix automated already
+ Identify who is needed to fix
+ Estimate scope in time and resources 
+ Gather information
+    To assist the next level when escalated 
+    To be reviewed in the postmortem
+Root cause analysis
+Document
+ Follow-up task tickets 
+ Close the incident
+Benefits of Unified Command
+• Unified efforts
+    Across multiple teams
+• One voice in communicating
+    Customers
+    Public
+• Executives
+• Emphasized urgency
+• Handle conflicting goals
 

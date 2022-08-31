@@ -1,0 +1,126 @@
+# Summary: Incident Management
+
+Incident is an unplanned interruption of a service, or reduction in the quality of a service. Incident aka failure 
+can occur at any time and can take in the form of Hardware failure, Software updates, Configuration changes, 
+Accidental events or Malicious attacks.
+
+An IM plan clearly describes the issue on how it is detected or who manually triggered the incident, date and time the 
+incident was reported, description of incident, incident category and level of incident.
+
+Levels of incident ranges from Severity Level SEV1 to SEV4 where SEV1 is the most critical. For SEV1, an example is
+when functionality is severely disrupted and is violating SLAs.
+
+When an incident is bigger than the team, it is easy for multiple teams to be working redundantly or at cross purposes.
+So, it requires higher level of communication, control and coordination whereby it needs to be escalated to experienced 
+Incident Commander. Long running incidents may also require handoff to teams across time zones as work progresses.
+
+IM is a structured approach to incident response adapted from Incident Command System. It is used by emergency 
+response organizations for natural disasters. It provides a clear and scalable process and provides clear roles and 
+responsibilities. It enhances control, coordination and communication. It is impt because major incidents are 
+costly (approx $100k-$300k/h), can lead to loss of customer confidence and regulatory penalties. A Well defined and 
+rehearsed IM Process will ensure faster incident resolution (MTTR = Mean time to restore, repair, respond or recovery).
+There will be reduced costs or revenue loss, improved internal/external communications and continuous improvement 
+and learning.
+
+An IM Process is as such:
+1. Identify key roles and clear chain of command
+2. Define responsibilities
+3. Capture response efforts for future analysis and learning
+4. Communicate
+
+Benefits of IM Planning include clearly defining a chain of command, everyone involved having a single person to 
+report to, defined communications channels for clear and rapid communication, having a systematic procedure to follow,
+clear focus on recovery of the business capabilities While capturing data for continuous improvement.
+
+An Incident Commander (IC) can adjust the organization accordingly. Increased complexity means responsibilities 
+may need to be delegated among Scribe, Communications Lead, Operations Lead and Planning Lead. 
+
+Incident Action Planning is as such:
+1. Cover a specified timeframe
+2. Be proactive towards resolving (Specify incident objectives and State the activities to be completed)
+3. Assign responsibilities (Identify needed resources)
+
+There needs to be clear communications. Possible solutions are instant messaging channel, conferencing bridge or 
+other audio/visual collaboration environment, shared folders, SharePoint documents or other collaboration for 
+documentation and information sharing.
+
+Key resource management activities include resource identification, adding subject matter experts to the 
+response team, planning for additional physical or cloud-based IT resources.
+
+Accountability is important. Need to clearly identify each role. Response operations need to be coordinated as 
+directed by the IC. There should be no heroic independent efforts. Changes to the normal operations of the 
+business should be tracked and followed-up. Span of Control monitored to adequately supervise areas.
+
+For Functional Area, 
+Incident Command: Objectives, Strategies, Priorities, Overall responsibility
+Communications: Coordinates internal and external comms, Formulates messages, Updates comms channels
+Operations: Arranges for resources and needed services, Directs all operations resources
+Planning: Tracking system changes, Collecting/analyzing info, Documenting follow-up tasks.
+
+IC is responsible for overall coordination, keeps incident moving towards resolution, coordinates other roles, 
+delegates tasks and should not be personally making changes. This is the only role that is always filled. He 
+maintains documentation of incident since it is critical to keep track of what has already been done and 
+necessary for lessons learned analysis. He ensures the overall stability of the system throughout the response.
+He provides info to internal and external stakeholders, like executive suites, customers, and regulatory agencies.
+He establishes and maintains liaison with third-party and oversights agencies participating in incident 
+response.
+
+When it comes to selecting/changing ICs, Selecting: Self-designated initial IC and IC On-Call.
+Changing: Qualified IC assumes command (e.g., the individual who discovered the incident accepts the IC role until an 
+on-call IC can join the response team). Incident changes in complexity. Current IC needs to rest, on long or 
+extended incident so rotation is required. The organization is set up to follow the sun through different time zones 
+and the end of the current workday is approaching.
+
+Scribe assists IC - Captures comm, actions and discussion from conference bridge. He uses visible comm tool like 
+Chatroom (Slack/Teams/etc) or Google docs. He also focuses on capturing all info for future use. It is impt to capture 
+info during the incident response efforts so that there is sufficient detail to allow analysis of the response during 
+postmortem. It should not be sanitized and not be edited to make the response appear better.
+
+Operations Lead (OL) works with IC. He develops theories on what is broken and why, recommends changes to IC and
+coordinates the operation team's efforts to restore the service. He makes sure that changes are made in a controlled 
+manner and that only operation teams are making changes to the system. He brings in subject matter experts (SMEs) to 
+assist.
+
+Communications Lead is responsible for comms, internal and external, periodic updates like status page, social media
+and direct comm. He may be delegated to maintain incident documentation like comm and post incident analysis.
+
+Planning Lead Supports OL and IC. He captures long-term issues, creates tickets, arranges handoffs, tracks system 
+divergence from SLO and supports Operations teams.
+
+Service-Specific Subject Matter Expert (SME) are usually called in to advise on service-specific knowledge and
+are not normally involved in operations. SME On-Call familiarizes with the other roles. He joins the incident 
+comms channel ASAP, offers theories and suggestions where support decisions are made by IC, focuses on resolving the 
+incident and leaves the incident channel when necessary.
+
+To know when to deal with an incident, note these 3:
+1. Requires immediate and dedicated effort to resolve - Determine incident level and impact
+2. Deal with incident ASAP when - SLI indicates current or imminent failure to meet SLO, Customer complaint
+3. Declare incident immediately, unless fix is obvious and easy
+
+It is important to identify impacts. Who and how many are impacted, Service unavailable (Consider dependencies),
+SLO/SLA in violation, Monetary (Loss of income, Penalties, Fines), Regulatory (Legal risk, Loss of license/permit to 
+operate, Criminal risk).
+
+Incident Cycle is: Identify > Diagnose > Stabilize > Verify > (cycle repeats)
+
+Incident Response Behavior: May deviate from normal operations, Normal seniority is not applied, Response team is 
+ultimate authority, IC must be consensus when can but always decisive, Tensions are high, Do not take it personally
+
+When closing the incident, it is impt to communicate. Ensure that the person who filed the incident is satisfied 
+that it is fixed. Preventive measures like what cause(s) can be eliminated. Key indicators to monitor for prevention 
+or early notice of future incidents. Documentation needs to be available for future reference in case of future 
+incidents. Postmortem for what was learned.
+
+In Enterprise Command Center (ECC), questions to be asked:
+Why are we here? Do we have everyone we need? What's the problem? What can't they do? What's been identified?
+What fixes are recommended? Are we working? Does everyone know what they did and when? Here in ECC, IC role changes
+to reduced Enterprise Authority, Resides with ECC. IC now assists in Strategic Planning and is no longer responsible 
+for strategy and stays on comm to ECC.
+
+Benefits of Unified Command are unified efforts across multiple teams, one voice in communicating (Customers, 
+Public), Executives, Emphasized urgency and Handle conflicting goals.
+
+# Summary: Postmortems
+
+# Summary: Embracing Risk, Feedback, and Fatigue
+

@@ -30,3 +30,19 @@ Incident Management Process
 2. Define responsibilities
 3. Capture response efforts for future analysis and learning
 4. Communicate
+Making Incident Management Work
+Faster Incident Resolutions
+    < MTTR
+• Reduced losses
+• Improved Communications
+• Continuous Improvement
+    > MTTF
+    Learn from failures
+Modular Organization
+• Incident Commander can adjust as needed
+• Increased complexity means responsibilities may need to be delegated
+    Scribe, Communications Lead, Operations Lead, Planning Lead
+Management by Objectives
+Establish measurable objectives for the response: Strategies, Tactics, Tasks, Activities
+Issue assignments in a specific and timeboxed manner: Specify who, When
+Monitoring the results of the incident tasks

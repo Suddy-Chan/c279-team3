@@ -1,0 +1,60 @@
+Postmortems
+- Part of the incident response process
+- Detect, Respond, Resolve, LEARN
+- SRE definition: a written report of an incident, including:
+    - its impacts
+    - the actions taken to mitigate or resolve it
+    - the root cause(s)
+    - the follow-up actions to prevent it from recurring
+
+Objectives of postmortems
+- failure is an opportunity for improvement
+- learn what went wrong and went right
+- practice follow-up actions
+
+To blame or not to blame
+- It's not the person that failed, but it's the system that failed
+- So we should focus on the system to make a repeat failure less likely
+
+Blameless postmortem process
+- Embrace risk: learn from mistakes rather than successes
+- Capture information during incident response efforts
+- Focus on preventing incidents
+- Use standard format for reports
+
+Problem statement and Impact statement
+- Problem statement: 
+    - What was the problem?
+    - What lead to the problem?
+    - What were the unexpected results due to changes to the system?
+    - Why did the incident happen?
+- Impact statement:
+    - What was the impact?
+    - Who was impacted? (Internal and External)
+    - % of customers impacted
+    - How much income lost
+    - Regulatory or legal consequences
+
+Timeline
+- a timeline should list all tasks done during recovery
+- also includes Mean Time to Recovery (MTTR) 
+
+Root cause(s)
+- To prevent reoccurance, focus on root causes, not proximate cause
+
+Corrective actions
+- Tasks and actions to be done: Deadlines, Assignment of responsibility, Follow-up
+- May need to be manual; May be referred to the development team
+
+Sharing of postmortems
+- Since the purpose of postmortem is to learn, postmortem must be shared, easily located in the next emergency
+  and need supporting documents that need to be shared
+
+Blameless culture
+- Sharing postmortem reports
+- Practice blameless postmortems
+    - Postmortem challenges
+    - Review reports
+- Award and Recognition
+    - Incentives for sharing failures  
+

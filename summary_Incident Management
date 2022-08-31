@@ -130,3 +130,69 @@ Benefits of Unified Command
 • Emphasized urgency
 • Handle conflicting goals
 
+
+
+Postmortems:
+An incident postmortem brings people together to discuss the details of an incident: 
+Why it happened, impact, actions taken to mitigated it and resolve it, follow-up actions to prevent the incident from recurring
+part of the incident response is to detect, respond, resolve, learn
+Blameless postmortem: 
+Post-project meeting in which you review problems to learn why they happened and prevent reoccurrence
+- No finger-pointing and no blame games
+- Focus on improving performance moving forward and proactively preventing the incident
+Possible postmortem structure
+Title
+Date of Report
+Author(s) of Report
+Incident Status
+Summary description of incident
+Impact(s)
+Root Cause(s)
+Trigger
+
+
+
+Embracing Risk, Feedback and Fatigue
+
+Incident occurrs: Prepare and Plan for them (Before incident); Practice response procedures (After incident)
+Error Budgets: Change Velocity
+Opportunity for improvement: Avoid heroics; On-call rotation 
+
+Continuous Improvement: 
+Automation: manual tasks vs toil; automation is not automatic (Not all toil should be automated)
+Documentation: needs to be kept updated, eg: postmortems, engineered improvements, better procedures, correction discovered during practice
+Reducing Toil: 
+- Tasks that are toil don’t provide a lot of value. Rather, they keep engineers from progressing with product and service development.
+- If teams spend the majority of their time on these tasks, they have less time for high-value work. This prohibits innovation.
+- Benefits of reducing toil: 
+    Time freed up can be saved and reinvested.
+    Prevent future toil from emerging. In that sense, it’s a positive spiral.
+Update SLO 
+Important to consider when Service Level Objectives need to be adjusted 
+ - might be up or down 
+ - focus on business expectations 
+ - customer satisfaction
+Update Monitoring/SLI
+ - Better Service Level Indicators identified 
+ - More accurate alerting 
+ - Better warning of pending incidents 
+Update Alerts 
+ - Eliminate false positives
+ - Improve information that accompanies alert
+ - Point to likely resources for faster fix
+ - Assign some alerts to automate ticket generation
+ - Focus on those that need immediate human intervention
+Failure - when, not if 
+Complexity of system guarantees hardware failure: Cloud 
+Security attacks: Organization may or may not know they have been attacked
+Database corruption
+Component update: Behave unexpectedly; Google: 70% of failures are due to component/configuration change
+Response to Failure: Accept that failure will happen: Plan, Learn, Practice
+On-call Rotation: Hard to provide 24/7 service availability; Is the support centralized or global; Heroics: attraction of acclaim for saving the data, set expectations, burnout
+Alert Fatigue: Common when systems are at an edge point; alerts have self-heal cycles, monitoring cycles repeatedly alert the same issue, false positive alert; Often leads to ignored alerts: will self-heal, think it is not really an issue; too many alerts 
+
+
+
+
+
+

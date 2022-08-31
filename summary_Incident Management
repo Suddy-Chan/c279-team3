@@ -1,0 +1,32 @@
+Incident Management:
+Raising Incident -> Fixing -> Response Team -> Resolve
+Failure Form: 
+Hardware failure, Software updates, Configuration changes, Accidental events, Malicious attacks
+Level of incident:
+SEV1: A critical disruption to the business that requires public notification and coordination with the executive teams.
+SEV2: A major incident with significant impact on customers' ability to use the service
+SEV3: A minor incident with low impact that require immediate attention
+SEV4: A minor issue with no impact on the customers' ability to use the service
+Incident management:
+• Structured approach to incident response
+• Adapted from Incident Command System
+    Used by emergency response organizations for natural disasters
+    Provides a clear and scalable process
+    Provides clear roles and responsibilities 
+• Enhances
+    Control
+    Coordination
+    Communication
+Major incidents are costly
+• $100000 - $300000 / hour or more • Loss of customer confidence
+• Regulatory penalties
+Well defined and rehearsed Incident Management Process
+• Faster incident resolution (MTTR = Mean time to restore, repair, respond or recovery)
+• Reduced costs and/or revenue loss
+• Improved internal/external communications
+• Continuous improvement and learning
+Incident Management Process
+1. Identify key roles and clear chain of command
+2. Define responsibilities
+3. Capture response efforts for future analysis and learning
+4. Communicate
